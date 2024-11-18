@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Link para o CSS externo -->
+    <link href="styless.css" rel="stylesheet">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="styless.css">
+</head>
+<body>
+
+<!-- Container principal do formulário de contato -->
+<div class="conteudo">
+    <h2 style="font-family: 'Vidaloka', serif;">Formulário de Contato</h2>
+<div class="contact-container">
+    
+    <form>
+        <!-- Campo de Nome -->
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <!-- Campo de E-mail -->
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <!-- Campo de CPF -->
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+        </div>
+
+        <!-- Campo de Data de Nascimento -->
+        <div class="form-group">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" class="form-control" id="dataNascimento" required>
+        </div>
+
+        <!-- Campo de Sugestão -->
+        <div class="form-group">
+            <label for="sugestao">Sugestão:</label>
+            <textarea class="form-control" id="sugestao" rows="4" placeholder="Deixe sua opinião"></textarea>
+        </div>
+
+        <!-- Botão Enviar -->
+        <button type="button" class="btn btn-primary btn-block" onclick="enviarFormulario()">Enviar</button>
+    </form>
+    <a href="inicio.html">
+        <button>Voltar à Página Inicial</button>
+      </a>      
+    </div>
+
+<!-- Script JavaScript externo -->
+<script src="scripts.js"></script>
+</div>
+</body>
+</html>
+

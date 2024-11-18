@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Floriografia</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="style.css">
+</head>
+<body>
+    <div class="conteudo">
+<div class="container">
+    <h2>Quiz: Descubra seus conhecimentos sobre Floriografia</h2>
+    <a href="inicio.html">
+        <button>Voltar à Página Inicial</button>
+      </a>   
+      <div class="conteudo">
+           
+    <form id="quizForm">
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <p>1. Qual é o significado da rosa vermelha na floriografia?</p>
+            <input type="radio" name="q1" value="a"> a) Amizade<br>
+            <input type="radio" name="q1" value="b"> b) Amor e paixão<br>
+            <input type="radio" name="q1" value="c"> c) Gratidão<br>
+            <input type="radio" name="q1" value="d"> d) Desculpas<br>
+        </div>
+        
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <p>2. Qual flor simboliza a lealdade e fidelidade?</p>
+            <input type="radio" name="q2" value="a"> a) Tulipa<br>
+            <input type="radio" name="q2" value="b"> b) Margarida<br>
+            <input type="radio" name="q2" value="c"> c) Violeta<br>
+            <input type="radio" name="q2" value="d"> d) Camélia<br>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <p>3. O que significa o girassol na floriografia?</p>
+            <input type="radio" name="q3" value="a"> a) Amor não correspondido<br>
+            <input type="radio" name="q3" value="b"> b) Alegria e felicidade<br>
+            <input type="radio" name="q3" value="c"> c) Decepção<br>
+            <input type="radio" name="q3" value="d"> d) Amizade verdadeira<br>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+            <p>4. Qual é o significado da orquídea na floriografia?</p>
+            <input type="radio" name="q4" value="a"> a) Luxúria e sedução<br>
+            <input type="radio" name="q4" value="b"> b) Pureza e inocência<br>
+            <input type="radio" name="q4" value="c"> c) Amor eterno<br>
+            <input type="radio" name="q4" value="d"> d) Amizade fiel<br>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question">
+            <p>5. Qual flor simboliza a boa sorte e prosperidade?</p>
+            <input type="radio" name="q5" value="a"> a) Peônia<br>
+            <input type="radio" name="q5" value="b"> b) Hortênsia<br>
+            <input type="radio" name="q5" value="c"> c) Lírio<br>
+            <input type="radio" name="q5" value="d"> d) Cravo<br>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question">
+            <p>6. O que significa o lírio branco na floriografia?</p>
+            <input type="radio" name="q6" value="a"> a) Pureza e inocência<br>
+            <input type="radio" name="q6" value="b"> b) Amor e paixão<br>
+            <input type="radio" name="q6" value="c"> c) Desculpas<br>
+            <input type="radio" name="q6" value="d"> d) Alegria<br>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="question">
+            <p>7. Qual é o significado da margarida na floriografia?</p>
+            <input type="radio" name="q7" value="a"> a) Amor não correspondido<br>
+            <input type="radio" name="q7" value="b"> b) Amizade verdadeira<br>
+            <input type="radio" name="q7" value="c"> c) Inocência e pureza<br>
+            <input type="radio" name="q7" value="d"> d) Gratidão<br>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="question">
+            <p>8. Qual flor simboliza a tristeza e melancolia?</p>
+            <input type="radio" name="q8" value="a"> a) Violeta<br>
+            <input type="radio" name="q8" value="b"> b) Lilás<br>
+            <input type="radio" name="q8" value="c"> c) Jacinto<br>
+            <input type="radio" name="q8" value="d"> d) Cravo<br>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="question">
+            <p>9. O que significa o cravo vermelho na floriografia?</p>
+            <input type="radio" name="q9" value="a"> a) Amor e paixão<br>
+            <input type="radio" name="q9" value="b"> b) Amizade fiel<br>
+            <input type="radio" name="q9" value="c"> c) Desculpas<br>
+            <input type="radio" name="q9" value="d"> d) Respeito<br>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="question">
+            <p>10. Qual é o significado da gardênia na floriografia?</p>
+            <input type="radio" name="q10" value="a"> a) Luxúria e sedução<br>
+            <input type="radio" name="q10" value="b"> b) Pureza e inocência<br>
+            <input type="radio" name="q10" value="c"> c) Amor eterno<br>
+            <input type="radio" name="q10" value="d"> d) Elegância e sofisticação<br>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-3" onclick="checkAnswers()">Verificar Respostas</button>
+    </form>
+
+    <p id="result" class="mt-4"></p>
+</div>
+
+<script>
+    function checkAnswers() {
+        // Respostas corretas
+        const correctAnswers = ['b', 'c', 'b', 'a', 'a', 'a', 'c', 'a', 'a', 'd'];
+        let score = 0;
+
+        // Verifica cada pergunta e compara com a resposta correta
+        correctAnswers.forEach((answer, index) => {
+            const question = document.querySelector(`input[name="q${index + 1}"]:checked`);
+            if (question && question.value === answer) {
+                score++;
+            }
+        });
+
+        // Exibe o resultado
+        const resultText = `Você acertou ${score} de ${correctAnswers.length} questões!`;
+        document.getElementById("result").innerText = resultText;
+    }
+</script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Declara o tipo de documento como HTML5 e define o idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8, permitindo caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a visualização em dispositivos móveis para a largura da tela -->
+    <title>Floriografia - A Linguagem das Flores</title> <!-- Define o título da página que aparece na aba do navegador -->
+    
+    <!-- Link para o CSS do Bootstrap, uma biblioteca para estilos e componentes prontos -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Vidaloka&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo CSS personalizado da página (styles.css) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="conteudo">
+    <!-- Cabeçalho da página com o título e o menu de navegação -->
+    <!-- Aplica fundo claro (bg-light) e espaçamento vertical (py-3) com Bootstrap -->
+        <div class="container text-center"> <!-- Centraliza o conteúdo do cabeçalho e define a largura da área -->
+            <h1 style="font-family: 'Vidaloka', serif;">Floriografia </h1>
+            
+            </p> <!-- Título principal da página -->
+            <h4 style="font-family: 'Playfair Display', serif;"> A Linguagem das Flores</h4>
+            <nav> <!-- Menu de navegação para as páginas do site -->
+                <a href="quiz.html">Quiz </a> |<!-- Link para o quiz -->
+                <a href="contato.html"> Contato</a> <!-- Link para a página de contato -->
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container my-5"> <!-- Define a área principal e aplica margens verticais (my-5) com Bootstrap -->
+        <section>
+            <h2 style="font-family: 'Playfair Display', serif;">O que é Floriografia?</h2> <!-- Título da seção explicando o conceito de floriografia -->
+            <p>Comunicar-se através da linguagem das flores, assim, a Florigrafia, era um modo de comunicação bastante desenvolvido no século XIX, usado para expressar sensações e emoções que nem sempre podiam ser ditas. Desse modo, flores e arranjos florais eram usados ​​para enviar mensagens codificadas.</p> <!-- Parágrafo de introdução sobre floriografia -->
+            <p>Cada tipo de flor transmite um sentimento diferente, seja pela sua espécie, cor, em um buquê ou sozinha. Com isso, tanto a pessoa que recebe se emociona de uma forma única quanto quem presenteia transmite intenções diferentes a depender do tipo de flor escolhida..</p>
+            <p>Agora, entenda os mistérios das flores</p>
+        </section>
+
+        <!-- Carrossel de imagens com significados das flores -->
+        <section class="my-5"> <!-- Aplica margens verticais (my-5) para separar o carrossel do restante do conteúdo -->
+            <h3 style="font-family: 'Playfair Display', serif;">Significados de Flores Específicas</h3> <!-- Título da seção do carrossel -->
+            
+            <!-- Carrossel de imagens com Bootstrap -->
+            <div id="flowerCarousel" class="carousel slide" data-ride="carousel"> <!-- Configura o carrossel com Bootstrap -->
+                <div class="carousel-inner"> <!-- Contêiner para os itens do carrossel -->
+                    
+                    <!-- Primeira imagem do carrossel (ativa por padrão) -->
+                    <div class="carousel-item active"> <!-- Define a primeira imagem como ativa (carousel-item active) -->
+                        <img src="rosa.jpg" width="300" height="300"  alt="Rosa Vermelha"> <!-- Imagem de uma rosa vermelha -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Rosa Vermelha</h5> <!-- Nome da flor -->
+                            <p>Amor, paixão, sedução, desejo.</p> <!-- Breve descrição do significado da flor -->
+                        </div>
+                    </div>
+                    
+                    <!-- Segunda imagem do carrossel -->
+                    <div class="carousel-item"> <!-- Próximo item do carrossel (não ativo por padrão) -->
+                        <img src="lirio.jpg" width="300" height="300" alt="Lírio"> <!-- Imagem de um lírio -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Lírio</h5> <!-- Nome da flor -->
+                            <p>pureza, inocência e virtude.</p> <!-- Descrição do significado do lírio -->
+                        </div>
+                    </div>
+                    
+                    <!-- Terceira imagem do carrossel -->
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="girassol.jpg" width="300" height="300" alt="Girassol"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Girassol</h5> <!-- Nome da flor -->
+                            <p>Felicidade, alegria e positividade..</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="orquidea.jpg" width="300" height="300" alt="Orquídea"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Orquídea</h5> <!-- Nome da flor -->
+                            <p>fecundação, a sexualidade e a virilidade.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="violeta.jpg" width="300" height="300" alt="Violeta"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Violeta</h5> <!-- Nome da flor -->
+                            <p>resistência, da capacidade de adaptação e da resiliência.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="tulipa.jpg" width="300" height="300" alt="Tulipa"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Tulipa:</h5> <!-- Nome da flor -->
+                            <p>prosperidade, nobreza e riqueza.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="cravo.jpg" width="300" height="300"alt="cravo"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>cravo vermelho</h5> <!-- Nome da flor -->
+                            <p> paixão, amor profundo, afetuosidade e fascínio.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="margarida.jpg" width="300" height="300" alt="Margarida"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Margarida</h5> <!-- Nome da flor -->
+                            <p>pureza, bondade, sensibilidade e paz.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="astromelia.jpg" width="300" height="300" alt="Astromelia"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Astromelia</h5> <!-- Nome da flor -->
+                            <p>união verdadeira, gratidão e saudade..</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="iris.jpg" width="300" height="300" alt="Íris"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Íris</h5> <!-- Nome da flor -->
+                            <p>sabedoria, coragem e fé.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="copodeleite.jpg" width="300" height="300" alt="Copo-de-leite"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Copo-de-leite</h5> <!-- Nome da flor -->
+                            <p>ranquilidade, elegância e delicadeza.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="magnolia.jpg" width="300" height="300" alt="Magnolia"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Magnolia</h5> <!-- Nome da flor -->
+                            <p>dignidade, perseverança e pureza de espírito.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="crisantemo.jpg" width="300" height="300"alt="Crisântemo"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Crisântemo</h5> <!-- Nome da flor -->
+                            <p> confiança, amizade e abundância.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="lavanda.jpg"width="300" height="300" alt="Lavanda"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Lavanda</h5> <!-- Nome da flor -->
+                            <p>serenidade, calma e devoção.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="camelia.jpg" width="300" height="300"alt="Camélia"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Camélia</h5> <!-- Nome da flor -->
+                            <p>perfeição e admiração.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="hortencia.jpg" width="300" height="300" alt="Hortênsia"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Hortênsia</h5> <!-- Nome da flor -->
+                            <p>gratidão, sinceridade e compreensão.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="jasmin.jpg" width="300" height="300" alt="Jasmin"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Jasmin</h5> <!-- Nome da flor -->
+                            <p>sensualidade e elegância</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"> <!-- Outro item do carrossel -->
+                        <img src="peonia.jpg" width="300" height="300" alt="Peonia"> <!-- Imagem de um girassol -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- Legenda visível a partir do tamanho médio -->
+                            <h5>Peonia</h5> <!-- Nome da flor -->
+                            <p>prosperidade e boa fortuna.</p> <!-- Breve descrição do significado do girassol -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botão de controle para imagem anterior do carrossel -->
+                <a class="carousel-control-prev" href="#flowerCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Ícone de seta para a esquerda -->
+                    <span class="sr-only">Previous</span> <!-- Texto alternativo para leitores de tela -->
+                </a>
+                
+                <!-- Botão de controle para próxima imagem do carrossel -->
+                <a class="carousel-control-next" href="#flowerCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Ícone de seta para a direita -->
+                    <span class="sr-only">Next</span> <!-- Texto alternativo para leitores de tela -->
+                </a>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts do Bootstrap para o funcionamento do carrossel e de outros componentes interativos -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery necessário para Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> <!-- Popper.js necessário para posicionamento de elementos -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- JavaScript do Bootstrap -->
+</body>
+</html>

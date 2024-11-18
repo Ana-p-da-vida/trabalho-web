@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Define a fonte e a cor do texto para todo o site */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal como Arial */
+    color: #ffffff; /* Define a cor do texto como um cinza escuro */
+    background-color: #380000c4; /* Define uma cor de fundo clara para a página */
+}
+body {
+    background-image: url('floriografia2.jfif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .conteudo {
+    background-color: #000000d7; /* Cor branca */
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Estilo do cabeçalho */
+header h1 {
+    color: #6c757d; /* Define a cor do título do cabeçalho como um cinza claro */
+    font-family: "Vidaloka", serif;
+ 
+  
+}
+
+.vidaloka-regular {
+    font-family: "Vidaloka", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+header h4 {
+    color: #6c757d; /* Define a cor do título do cabeçalho como um cinza claro */
+    font-family: 'Playfair Display', serif
+ 
+}
+
+header h2 {
+    color: #6c757d; /* Define a cor do título do cabeçalho como um cinza claro */
+    font-family: 'Playfair Display', serif
+   
+}
+
+header h3 {
+    color: #6c757d; /* Define a cor do título do cabeçalho como um cinza claro */
+    font-family: 'Playfair Display', serif
+      
+}
+
+header nav a {
+    color: #520000; /* Define a cor dos links de navegação como azul */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 10px; /* Adiciona espaçamento horizontal entre os links */
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado quando o link é passado com o mouse */
+}
+
+/* Define o estilo do conteúdo principal */
+main {
+    max-width: 800px; /* Limita a largura máxima do conteúdo principal a 800px */
+    margin: 0 auto; /* Centraliza o conteúdo principal na página */
+}
+
+/* Estilo da legenda do carrossel */
+     .carousel-caption {
+    position: static; /* Coloca a legenda abaixo da imagem */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para a legenda */
+    color: white;
+    padding: 15px; /* Espaçamento interno */
+}
+
+
+/* Centraliza o carrossel */
+#flowerCarousel {
+    margin: 10% auto;
+    max-width: 28%; /* Ajuste conforme necessário */
+}
